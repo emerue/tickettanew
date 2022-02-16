@@ -1,0 +1,729 @@
+body{
+    background-image: -webkit-linear-gradient(0deg, #03288b 90%, #24DCE9 150%) ;
+    font-family: "poppins", sans-serif;
+}
+
+
+#form4 .pricingbtns{
+    margin: 0px auto;
+    text-align: center;
+}
+.pricingbtns .btn{
+    color: white;
+    margin: 0 1%;
+    font-size: 1em;
+}
+.pricingbtns .add_ticket{
+background-color: #26A2BC;
+}
+.pricingbtns .add_ticket:hover{
+background-color: #0c9ab6;
+}
+
+.pricingbtns .free_ticket{
+background-color: #1D50DE;
+}
+.pricingbtns .free_ticket:hover{
+background-color: #0a3bc4;
+}
+
+.pricingbtns .promo_code{
+background-color: #02113A;
+}
+.pricingbtns .promo_code:hover{
+background-color: #021b5e;
+}
+.close{
+    padding: 2%;
+}
+
+.close a i{
+    font-weight: 600;
+    color: red;
+}
+.lala .row{
+    position: absolute;
+}
+.bg-modal{
+    width: 70%;
+   padding: 5%;
+    margin: 0px auto;
+    background-color: rgba(0,0, 0, 0.5);
+    position: absolute;
+    top: 200px;
+    left: 250px;
+    z-index: 1;
+    display:none;
+    justify-content: center;
+    align-items: center;
+}
+.ticketinfo{
+    /* border: 1px solid #02113A; */
+    padding: 25px;
+    height: 380px;
+    background-color: white;
+    /* display: none; */
+}
+
+.ticketinfo h4{
+    font-size: 1.6em;
+    font-weight: 600;
+    font-family: 'poppins', sans-serif;
+    /* text-transform: uppercase; */
+}
+.ticketinfo label{
+    margin-bottom: .1rem;
+    color: #02113A;
+    font-weight: 500;
+}
+.ticketinfo .form-control{
+    width: 100%;
+}
+
+
+.done{
+    background-color: #1D50DE;
+    color: white;
+    padding-left:20px;
+    padding-right:20px;
+    text-align: center;
+    margin: 20px auto;
+   
+}
+
+.ticketpricing{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;  
+}
+
+.ticketpricing > *{
+    box-shadow:1px 1px 30px 1px rgba(0, 0, 0, 0.2) ;
+    width: 400px;
+    /* width: 30%; */
+    background-color: #FFF;
+    /* height: 330px; */
+    margin:20px;
+    display: inline-block;
+    transition: 0.5s linear;
+    flex: 0 1 40%; 
+}
+.pricetype_header{
+    width: 100%;
+    background-color: #1D50DE;
+}
+   
+
+.pricetype_header p{
+    padding: 2%;
+    text-transform: uppercase;
+    font-size: 1.7em;
+    font-family: "poppins", sans-serif;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+.pricetype-content{
+    text-align: center;
+}
+.pricetype-content label{
+    color: #02113A;
+    font-weight: 800;
+    text-align: center;
+    margin: 0px auto;
+    padding-bottom: 0rem;
+    font-size: .8em;
+    text-transform: uppercase;
+}
+
+.price_space , .quantity_space{
+    color: #FFFAE4;
+    background-color: #02113A;
+    padding: .3%;
+    width: 80%;
+    margin: 0px auto;
+    font-size: 1.5em;
+    font-weight: 500;
+    border-radius:5px ;
+}
+
+.salesinfo{
+    padding: 2%;
+    margin-left:7px ;
+    width: 70%;
+    text-transform: uppercase;
+}
+
+.salesinfo p{
+    margin-bottom: 0rem;
+    color: #02113A;
+    font-weight: 500;
+    font-size: .9em;
+}
+
+.salesinfo p i{
+    color: #1D50DE;
+}
+
+.trash{
+    text-align: right;
+    padding-right: 3%;
+    padding-bottom: 1%;
+}
+.edit,.kill{
+    color: #02113A;
+    transition: all ease .4s;
+}
+
+.kill:hover,.edit:hover{
+    color: #1D50DE;
+    cursor: pointer;
+}
+
+
+
+.total-event-capacity{
+    text-align: center;
+}
+
+.total-event-capacity h6{
+    color: #02113A;
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    font-size: .8rem;
+}
+
+.total-event-capacity p{
+    color: #1D50DE;
+    font-weight: 700;
+    font-size: 3rem;
+    margin-top: -25px;
+}
+
+
+
+#editor{
+    height: 300px;
+}
+
+
+.edit-div{
+    width: 80%;
+}
+
+.sum{
+    font-size: 1em;
+    font-family: "poppins", sans-serif;
+    color: rgb(17, 17, 17);
+    font-weight: 600; 
+}
+
+
+
+
+
+
+/* .formcontainer{
+    background-color: white;
+    width: 35%;
+    height: 650px;
+    margin: 2% auto;
+    margin-bottom: 2%;
+    overflow-y: scroll;
+    padding: 2%; 
+} */
+.formcontainer{
+    width: 60%;
+    height: 100%;
+    margin: 4% auto;
+    margin-bottom: 2%;
+    overflow-x: hidden;
+
+}
+.formcontainer h2{
+    font-family: "poppins", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 800;
+    color: #1D50DE;
+    padding-top: 1%;
+}
+.form-header h3{
+    font-family: "poppins", sans-serif !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.7em;
+    text-align: center;
+    color: #02113A;
+    /* padding-top:4% ; */
+}
+
+
+.form-header{
+    padding: 5%;
+}
+
+.form-content{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.formcontainer .form-header p{
+    font-size: .8em;
+    text-align: center;
+}
+
+.formcontainer ::placeholder{
+    color: #c9c9c9;
+}
+
+.form-content .form-group label{
+    font-weight: 600;
+    font-size: 1.5em;
+    margin-bottom: .2rem;
+    color: #1D50DE;
+}
+
+
+.form-control{
+    border:1px solid #02113A;
+    border-radius: 0px;
+    font-size: .9em;
+    width: 80%;
+}
+
+.form-control:focus{
+    box-shadow: none;
+}
+
+
+#form2 .time_date .form-control{
+    width: 100%;
+}
+
+#form2 .form-check-label{
+    font-size: .8em;
+}
+
+#form2 .form-content label{
+    color: black;
+}
+
+.form-bg{
+    background-color: white;
+}
+
+.form-outer{
+    width: 100%;
+    overflow: hidden;
+}
+
+.form{
+    display: flex;
+    width: 400%;
+}
+
+ .form form{
+    width: 25%;
+    transition: margin-left 0.3s ease-in-out;
+    
+}
+
+
+.DTheader span{
+    font-size: 2em;
+    font-weight: 600;
+    color: #1D50DE;
+}
+
+.dtsubheader{
+    width: 50%;  
+}
+
+.dtsubheader h3{
+    font-size: 1.3em;
+    color: #1D50DE;
+    font-family: 'poppins', sans-serif;
+}
+
+.dtsubheader p{
+    font-size:.9em;
+    color: black;
+    font-family: 'poppins', sans-serif;
+}
+
+
+
+.btn-next{
+    background-color: #1D50DE;
+    color: white;
+    /* margin-left: 65%; */
+    /* margin-top: 35%; */
+    /* margin-bottom: 35%; */
+    border-radius: 20px;
+    width:100px;
+    text-align: center;
+
+}
+
+.mar{
+    margin-left: 65%;
+}
+
+.btn-next:hover{
+    background-color: #143797;
+}
+.btn-back:hover{
+    background-color: #051e64;
+}
+
+.btn-back{
+    background-color:#02113A;
+    color: white;
+    margin-right: 15%;
+    /* margin-bottom: 15%; */
+    border-radius: 20px;
+    width:100px;
+    text-align: center;
+
+}
+
+.form-button{
+    width: 100%;
+}
+
+.step-row{
+    width: 100%;
+    height: 70px;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 -1px 5px -1px #5e5e5e;
+    position: relative;
+}
+
+.step-col{
+    width: 25%;
+    text-align: center;
+    position: relative;
+    color:black;
+    font-weight: 500;
+}
+
+.step-col:hover{
+   cursor: pointer !important;
+}
+
+#progress{
+    position: absolute;
+    width:25%;
+    height: 100%;
+    background:  #4fe2ff;
+    transition: 1s;
+}
+
+#progress::after{
+    content: ' ';
+    height: 0;
+    width: 0;
+    border-top: 35px solid transparent;
+    border-bottom: 35px solid transparent;
+    position: absolute;
+    right: -24px;
+    top: 0px;
+    border-left: 24px solid  #4fe2ff;
+}
+
+.footer{
+    margin-top: -500px;
+}
+
+
+/* styling value of an input */
+
+/* .tagsinput[value]{
+    background-color: red;
+    color: white;
+} */
+
+.tagbox .addtag{
+    display: flex;
+    align-content: center;
+}
+.tagbox input{
+    width: 50%;
+   color: #1D50DE !important;
+   font-weight: 500;
+}
+
+.tagred{
+    border: 1px solid red !important;
+}
+
+.taglist li{
+    display: inline-block;
+    color: white;
+    background-color: #051e64;
+    padding: 5px;
+    margin: 5px 5px 5px 0px;
+    transition: all ease .5s;
+    /* border-radius: 2px; */
+}
+
+
+.addtag .add{
+    background-color: #1D50DE;
+    color: white;
+    width: 100px;
+    margin-left: 3px;
+    border-radius: 0rem;
+}
+
+.delete_li:hover{
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 575px){
+
+    .edit-div{
+        width: 100%;
+    }
+    
+    
+.formcontainer{
+    width: 95%;
+}
+
+.form-control{
+    width: 100%;
+}
+
+
+#form2 .col-3, .col-2{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+
+.jumbo h2{
+    font-size: 2.3em;
+    padding-top: .5em;
+}
+
+
+.col-md-1{
+    width: 50px;
+}
+
+#form2 .form-button .row{
+  margin-left: 12%;
+}
+
+#form3 .form-button .row{
+    margin-left: 12%;
+  }
+
+#form4 .form-button .row{
+    margin-left: 14%;
+  }
+
+
+
+  .drop-zone__prompt{
+    font-size: .9em !important;
+  }
+  .otherimages{
+      margin-top: 15px;   
+  }
+
+  .otherimages .drop-zone__prompt{
+    font-size: .9em !important;
+  }
+ .others .row{
+      margin-left: 0px;
+      margin-right: 0px;
+  }
+
+
+
+.form-header h3{
+    padding-top: 3%;
+}
+
+
+.dtsubheader{
+    width: 100% !important;
+}
+
+.drop-zone{
+    height: 200px !important;
+    padding: 30px !important;
+}
+
+
+.bg-modal{
+    left: 0px;
+    top: 150px;
+    width: 100%;
+    height: 1000%;
+    background-color: rgba(0, 0, 0, 0.781);
+}
+
+.ticketinfo{
+    height: 650px !important;
+}
+
+.ticketinfo .col-4{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.ticketinfo .col-3{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.ticketinfo .col-1{
+    flex: 0 0 0%;
+    max-width: 0%;
+}
+
+.ticketinfo .col-2{
+    flex: 0 0 10%;
+    max-width: 100%;
+}
+
+.ticketinfo .form-row{
+    margin-top: 2%;
+}
+.min{
+    margin-top: 3%;
+}
+
+#form4 .form-content{
+    padding-top: 3%;
+}
+
+.ticketpricing > *{
+    flex: 0 1 100%; 
+}
+
+.ticketpricing{
+    margin-left: 0px !important;
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+@media (max-width: 768px){
+.jumbo h2{
+    /* font-size: 2.3em; */
+    padding-top: .5em;
+}
+
+.formcontainer{
+    width: 90%;
+}
+
+#form2 .col-3, .col-2{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.col-md-1{
+    width: 50px;
+}
+
+/* #form4 .form-button .row{
+    margin-left:65% !important;
+} */
+
+
+.btnss .ml-3{
+   margin-left: 2rem !important;
+}
+
+}
+
+
+@media (max-width: 1024px){
+
+    .tagbox input{
+        width: 80%;
+       color: #1D50DE !important;
+       font-weight: 500;
+    }
+
+
+    .jumbo h2{
+        /* font-size: 2.3em; */
+        padding-top: .5em;
+    }
+    
+
+    .formcontainer{
+        width: 95%;
+    }
+
+    #form2 .col-3, .col-2{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    /* #form4 .form-button .row{
+        margin-left: 5%;
+        width: 50%;
+    } */
+
+    /* .ml-3{
+        margin-left: 0rem !important;
+    }
+
+    .mr-5{
+        margin-right: 2rem !important;
+    } */
+    .otherimages{
+        margin-top: 15px; 
+        height: 180px !important;  
+    }
+
+    .dtsubheader{
+        width: 70%;
+    }
+    
+
+    .bg-modal{
+        left: 0px;
+        top: 200px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.781);
+    }
+    
+    .ticketinfo{
+        height: 450px;
+    }
+
+    .ticketpricing{
+        margin-left: 33px;
+    }
+
+    .pricetype{
+        width: 40%;
+        margin-left: 14px;
+    }
+
+   
+    
+}

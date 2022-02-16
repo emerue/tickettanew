@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Dashboard | Event Records</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    
+        <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
+        <link rel="stylesheet" href="css/themify-icons/themify-icons.css">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:100,200,400,300,500,600,700' rel='stylesheet'>
+    
+        <link rel="stylesheet" href="ticketta.css">
+        <link rel="stylesheet" href="dashboard.css">
+    </head>
+
+<body>
+
+      <!--================ Start Header Menu Area =================-->
+      <header class="header_area">
+        <div class="main_menu">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand logo_h" href="index.html">Ticketta</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav menu_nav ml-auto">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Dashboard</a></li>
+                            <li class="nav-item"><a class="nav-link" href="index.html">My Events</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="index.html">Event Records</a></li>
+                            <li class="nav-item"><a class="nav-link" href="index.html">Purchases</a></li>
+                            <!-- <li class="nav-item submenu dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+                                        aria-haspopup="true" aria-expanded="false">Help</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item"><a class="nav-link" href="">How to</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="">How to</a></li>
+                                    </ul>
+                                </li> -->
+
+                        </ul>
+                        <ul class="nav-shop">
+                            <!-- <span class="btn btn-danger"> <i class="fa fa-credit-card"></i> Make Payment</span> -->
+                            <li class="nav-item"><a class="button button-header" href="#">Create Event</a></li>
+                        </ul>
+
+                        <ul class="user-profile">
+                            <li class="user-image">
+                                <span><i class="fa fa-user"></i></span>
+                            </li>
+                            <li class=" nav-item submenu dropdown">
+                                <a class="pl-2 pt-2 nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+                                    aria-haspopup="true" aria-expanded="false">Jane Doe</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="nav-link" href="">Account Settings</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="">Change Password</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="">Log Out</a></li>
+                                </ul>
+
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--================ End Header Menu Area =================-->
+
+
+    <div class="dashboard">
+        <div class="container-fluid">
+
+    <!--================ Event Records =================-->
+    <section class="pb-4 bg-white">
+        <h3>My Event Records</h3>
+        <div class="filternav mt-4">
+            <div class="row">
+             <div class="col-lg-6 my-2">
+               <div class="input-group">
+                 <input id="search" type="text" class="form-control" name="search" placeholder="Search Tickets Here">
+                 <span class="input-group-addon"><i class="ti-search"></i></span>
+             </div>
+             </div>
+             <div class="col-lg-3 my-2">
+               <div class="form-group pb-3">
+             
+                 <select  class="form-control">
+                   <option value="">Filter tickets by Status</option>
+                   <option value="On sale">On sale</option>
+                   <option value="Pending">Pending</option>
+                   <option value="Sold Out">Sold Out</option>
+                 </select>
+               </div>
+             </div>
+             <div class="col-lg-3 my-2">
+               <div class="form-group pb-3">
+             
+                 <select  class="form-control">
+                   <option value="">Filter tickets by month</option>
+                   <option value="January">January</option>
+                   <option value="February">February</option>
+                   <option value="March">March</option>
+                   <option value="April">April</option>
+                   <option value="May">May</option>
+                   <option value="June">June</option>
+                   <option value="July">July</option>
+                   <option value="August">August</option>
+                   <option value="September">September</option>
+                   <option value="October">October</option>
+                   <option value="November">November</option>
+                   <option value="December">December</option>
+                 </select>
+               </div>
+             </div>
+             
+            </div>
+          </div>
+
+        <p class="information pl-2"><i class="fa fa-info-circle"></i> Click the cards to open event dashbaord -ikenna implement the click</p>
+        <div class="records  mt-2 ">
+          <div class="contain">
+
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="event-record">
+                  <div class="event-record-header">
+                    <h3>February 12</h3>
+                  </div>
+                  <div class="event-record-body">
+                    <div class="event">
+                      <img src="/Image@2x.png" alt="">
+                      <h4>
+                        <b>A FEMINIST'S GUIDE
+                          TO BOTANY:</b> Online Botanical Painting Session
+                      </h4>
+                    </div>
+
+                    <div class="sales-progress-bar pt-4 pb-3">
+                      <p class="sold">Sold</p>
+                      <p>60/120</p>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width:50%"></div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-lg-5">
+                        <div class="status">
+                          <p>Status</p>
+                          <span class="Onsale">On sale</span>
+                        </div>
+                      </div>
+                      <div class="col-lg-5">
+                        <div class="income">
+                          <p>Income</p>
+                          <span>₦60,000</span>
+
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="event-record">
+                  <div class="event-record-header">
+                    <h3>February 12</h3>
+                  </div>
+                  <div class="event-record-body">
+                    <div class="event">
+                      <img src="/Image@2x.png" alt="">
+                      <h4>
+                        <b>A FEMINIST'S GUIDE
+                          TO BOTANY:</b> Online Botanical
+                        Painting Session
+                      </h4>
+                    </div>
+
+                    <div class="sales-progress-bar pt-4 pb-3">
+                      <p class="sold">Sold</p>
+                      <p>120/120</p>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width:100%"></div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-lg-5">
+                        <div class="status">
+                          <p>Status</p>
+                          <span class="soldout">Sold Out</span>
+                        </div>
+                      </div>
+                      <div class="col-lg-5">
+                        <div class="income">
+                          <p>Income</p>
+                          <span>₦120,000</span>
+
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="event-record">
+                  <div class="event-record-header">
+                    <h3>February 12</h3>
+                  </div>
+                  <div class="event-record-body">
+                    <div class="event">
+                      <img src="/Image@2x.png" alt="">
+                      <h4>
+                        <b>A FEMINIST'S GUIDE
+                          TO BOTANY:</b> Online Botanical
+                        Painting Session
+                      </h4>
+                    </div>
+
+                    <div class="sales-progress-bar pt-4 pb-3">
+                      <p class="sold">Sold</p>
+                      <p>0/120</p>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width:0%"></div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-lg-5">
+                        <div class="status">
+                          <p>Status</p>
+                          <span class="pending">Pending</span>
+                        </div>
+                      </div>
+                      <div class="col-lg-5">
+                        <div class="income">
+                          <p>Income</p>
+                          <span>₦60,000</span>
+
+                        </div>
+                      </div>
+                  
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="event-record">
+                  <div class="event-record-header">
+                    <h3>February 12</h3>
+                  </div>
+                  <div class="event-record-body">
+                    <div class="event">
+                      <img src="/Image@2x.png" alt="">
+                      <h4>
+                        <b>A FEMINIST'S GUIDE
+                          TO BOTANY:</b> Online Botanical
+                        Painting Session
+                      </h4>
+                    </div>
+
+                    <div class="sales-progress-bar pt-4 pb-3">
+                      <p class="sold">Sold</p>
+                      <p>60/120</p>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width:50%"></div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-lg-5">
+                        <div class="status">
+                          <p>Status</p>
+                          <span class="Onsale">On sale</span>
+                        </div>
+                      </div>
+                      <div class="col-lg-5">
+                        <div class="income">
+                          <p>Income</p>
+                          <span>₦60,000</span>
+
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="event-record">
+                  <div class="event-record-header">
+                    <h3>February 12</h3>
+                  </div>
+                  <div class="event-record-body">
+                    <div class="event">
+                      <img src="/Image@2x.png" alt="">
+                      <h4>
+                        <b>A FEMINIST'S GUIDE
+                          TO BOTANY:</b> Online Botanical Painting Session
+                      </h4>
+                    </div>
+
+                    <div class="sales-progress-bar pt-4 pb-3">
+                      <p class="sold">Sold</p>
+                      <p>60/120</p>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width:50%"></div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-lg-5">
+                        <div class="status">
+                          <p>Status</p>
+                          <span class="Onsale">On sale</span>
+                        </div>
+                      </div>
+                      <div class="col-lg-5">
+                        <div class="income">
+                          <p>Income</p>
+                          <span>₦60,000</span>
+
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="event-record">
+                  <div class="event-record-header">
+                    <h3>February 12</h3>
+                  </div>
+                  <div class="event-record-body">
+                    <div class="event">
+                      <img src="/Image@2x.png" alt="">
+                      <h4>
+                        <b>A FEMINIST'S GUIDE
+                          TO BOTANY:</b> Online Botanical
+                        Painting Session
+                      </h4>
+                    </div>
+
+                    <div class="sales-progress-bar pt-4 pb-3">
+                      <p class="sold">Sold</p>
+                      <p>120/120</p>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width:100%"></div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-lg-5">
+                        <div class="status">
+                          <p>Status</p>
+                          <span class="soldout">Sold Out</span>
+                        </div>
+                      </div>
+                      <div class="col-lg-5">
+                        <div class="income">
+                          <p>Income</p>
+                          <span>₦120,000</span>
+
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="event-record">
+                  <div class="event-record-header">
+                    <h3>February 12</h3>
+                  </div>
+                  <div class="event-record-body">
+                    <div class="event">
+                      <img src="/Image@2x.png" alt="">
+                      <h4>
+                        <b>A FEMINIST'S GUIDE
+                          TO BOTANY:</b> Online Botanical
+                        Painting Session
+                      </h4>
+                    </div>
+
+                    <div class="sales-progress-bar pt-4 pb-3">
+                      <p class="sold">Sold</p>
+                      <p>0/120</p>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width:0%"></div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-lg-5">
+                        <div class="status">
+                          <p>Status</p>
+                          <span class="pending">Pending</span>
+                        </div>
+                      </div>
+                      <div class="col-lg-5">
+                        <div class="income">
+                          <p>Income</p>
+                          <span>₦60,000</span>
+
+                        </div>
+                      </div>
+                  
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="event-record">
+                  <div class="event-record-header">
+                    <h3>February 12</h3>
+                  </div>
+                  <div class="event-record-body">
+                    <div class="event">
+                      <img src="/Image@2x.png" alt="">
+                      <h4>
+                        <b>A FEMINIST'S GUIDE
+                          TO BOTANY:</b> Online Botanical
+                        Painting Session
+                      </h4>
+                    </div>
+
+                    <div class="sales-progress-bar pt-4 pb-3">
+                      <p class="sold">Sold</p>
+                      <p>60/120</p>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width:50%"></div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-lg-5">
+                        <div class="status">
+                          <p>Status</p>
+                          <span class="Onsale">On sale</span>
+                        </div>
+                      </div>
+                      <div class="col-lg-5">
+                        <div class="income">
+                          <p>Income</p>
+                          <span>₦60,000</span>
+
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+          
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+      <!--================ Event Records ENds=================-->
+            
+        </div>
+    </div>
+    
+
+
+
+    <footer class="footer pt-5 mt-5">
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="row d-flex">
+              <p class="col-lg-12 footer-text text-center">
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+      Copyright &copy; Ticketta <script>document.write(new Date().getFullYear());</script> All rights reserved </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <script src="js/jquery/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="tickett.js"></script>
+    <script src="dashboard.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Ticketta | Dashboard</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="css/themify-icons/themify-icons.css">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:100,200,400,300,500,600,700' rel='stylesheet'>
+
+  <link rel="stylesheet" href="ticketta.css">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+
+
+<body>
+
+
+
+  <!--================ Start Header Menu Area =================-->
+  <header class="header_area">
+    <div class="main_menu">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand logo_h" href="index.html">Ticketta</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+            <ul class="nav navbar-nav menu_nav ml-auto">
+              <li class="nav-item active"><a class="nav-link" href="index.html">Dashboard</a></li>
+              <li class="nav-item"><a class="nav-link" href="index.html">My Events</a></li>
+              <li class="nav-item"><a class="nav-link" href="index.html">Event Records</a></li>
+              <li class="nav-item"><a class="nav-link" href="index.html">Purchases</a></li>
+              <!-- <li class="nav-item submenu dropdown">
+                              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+                                  aria-haspopup="true" aria-expanded="false">Help</a>
+                              <ul class="dropdown-menu">
+                                  <li class="nav-item"><a class="nav-link" href="">How to</a></li>
+                                  <li class="nav-item"><a class="nav-link" href="">How to</a></li>
+                              </ul>
+                          </li> -->
+
+            </ul>
+            <ul class="nav-shop">
+              <!-- <span class="btn btn-danger"> <i class="fa fa-credit-card"></i> Make Payment</span> -->
+              <li class="nav-item"><a class="button button-header" href="#">Create Event</a></li>
+            </ul>
+
+            <ul class="user-profile">
+              <li class="user-image">
+                <span><i class="fa fa-user"></i></span>
+              </li>
+              <li class=" nav-item submenu dropdown">
+                <a class="pl-2 pt-2 nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                  aria-expanded="false">Jane Doe</a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item"><a class="nav-link" href="">Account Settings</a></li>
+                  <li class="nav-item"><a class="nav-link" href="">Change Password</a></li>
+                  <li class="nav-item"><a class="nav-link" href="">Log Out</a></li>
+                </ul>
+
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!--================ End Header Menu Area =================-->
+
+  <div class="dashboard">
+    <div class="container-fluid">
+
+      <section>
+        <h3>My Events</h3>
+
+        <!--================ Event Section =================-->
+        <div class="eventlist pb-3">
+          <div class="eventlist-content pt-1 mt-5">
+            <div class="row event_tickets pb-5">
+              <!-- first card -->
+
+              <div class="col-lg-3 col-md-6">
+
+                <div class="create_ticket">
+                  <a href="index.html">
+                    <div class="text">
+                      <p class="plus">+</p>
+                      <p class="create-text">Create Ticket</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- first card end -->
+              <div class="col-lg-3 col-md-6">
+                <div class="ticket_card">
+                  <div class="row mobile_card">
+                    <div class="container">
+                      <div class="ticket_img">
+                        <img src="/img/b5.jpg" alt="">
+                        <ul class="date_time">
+                          <li> Fri, Nov 18, 2020</li>
+                          <li> 7:30 PM WAT</li>
+                        </ul>
+                      </div>
+                      <div class="ticket_card_content">
+
+                        <a href="#map"><i class="fa fa-map-marker-alt"></i> Lagos</a>
+                        <h4>
+                          A FEMINIST'S GUIDE
+                          TO BOTANY: Online Botanical
+                          Painting Session
+                        </h4>
+
+
+                        <span class="love"><i class="fa fa-heart"></i></span>
+                        <p class="open">Open</p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="ticket_card">
+                  <div class="row mobile_card">
+                    <div class="container">
+                      <div class="ticket_img">
+                        <img src="/img/b5.jpg" alt="">
+                        <ul class="date_time">
+                          <li> Fri, Nov 18, 2020</li>
+                          <li> 7:30 PM WAT</li>
+                        </ul>
+                      </div>
+                      <div class="ticket_card_content">
+
+                        <a href="#map"><i class="fa fa-map-marker-alt"></i> Lagos</a>
+                        <h4>
+                          A FEMINIST'S GUIDE
+                          TO BOTANY: Online Botanical
+                          Painting Session
+                        </h4>
+
+
+                        <span class="love"><i class="fa fa-heart"></i></span>
+                        <p class="open">Open</p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="ticket_card">
+                  <div class="row mobile_card">
+                    <div class="container">
+                      <div class="ticket_img">
+                        <img src="/img/b5.jpg" alt="">
+                        <ul class="date_time">
+                          <li> Fri, Nov 18, 2020</li>
+                          <li> 7:30 PM WAT</li>
+                        </ul>
+                      </div>
+                      <div class="ticket_card_content">
+
+                        <a href="#map"><i class="fa fa-map-marker-alt"></i> Lagos</a>
+                        <h4>
+                          A FEMINIST'S GUIDE
+                          TO BOTANY: Online Botanical
+                          Painting Session
+                        </h4>
+
+
+                        <span class="love"><i class="fa fa-heart"></i></span>
+                        <p class="open">Open</p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="see_more">
+            <h5> <a href=""> See More</a></h5>
+          </div>
+
+        </div>
+        <!--================ Event Section ENds=================-->
+
+
+
+
+
+      </section>
+
+
+
+      <!--================ purchasedSection =================-->
+      <section class="pt-5">
+        <h3>Purchased Tickets</h3>
+        <div class="purchased-tickets pt-4 mt-4">
+          <div class="ticket pb-4">
+            <table class="table">
+              <!-- <thead>
+                <tr>
+                  
+                  <th>Event</th>
+                  <th>Starts</th>
+                  <th>Ends</th>
+                  <th>Amount</th>
+                  <th>Status</th>
+                  <th></th>
+                </tr>
+              </thead> -->
+
+              <tbody>
+                <tr>
+                  <td>
+                    <a href="#">
+                      <div class="event">
+                        <img src="/Image.png" alt="">
+                        <h4>
+                          A FEMINIST'S GUIDE
+                          TO BOTANY: Online Botanical
+                          Painting Session
+                        </h4>
+                      </div>
+                    </a>
+                  </td>
+                  <td>
+                    <p class="tablehead">Starts</p>
+                    <p class="start-date">Thursday, Nov 26</p>
+                    <p class="start-time">7:30pm WAT</p>
+                  </td>
+                  <td>
+                    <p class="tablehead">Stops</p>
+                    <p class="stop-date">Thursday, Nov 26</p>
+                    <p class="stop-time">7:30pm WAT</p>
+                  </td>
+                  <td>
+                    <p class="tablehead">Amount</p>
+                    <p class="ticket-amount">5 Tickets</p>
+                  </td>
+                  <td>
+                    <p class="tablehead">Status</p>
+                    <p class="status">
+                      Ongoing
+                    </p>
+                  </td>
+                  <td class="options"> <a href=""><i class="fa fa-info" aria-hidden="true"></i></a></td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#">
+                      <div class="event">
+                        <img src="/Image.png" alt="">
+                        <h4>
+                          A FEMINIST'S GUIDE
+                          TO BOTANY: Online Botanical
+                          Painting Session
+                        </h4>
+                      </div>
+                    </a>
+                  </td>
+                  <td>
+                    <p class="tablehead">Starts</p>
+                    <p class="start-date">Thursday, Nov 26</p>
+                    <p class="start-time">7:30pm WAT</p>
+                  </td>
+                  <td>
+                    <p class="tablehead">Stops</p>
+                    <p class="stop-date">Thursday, Nov 26</p>
+                    <p class="stop-time">7:30pm WAT</p>
+                  </td>
+                  <td>
+                    <p class="tablehead">Amount</p>
+                    <p class="ticket-amount">5 Tickets</p>
+                  </td>
+                  <td>
+                    <p class="tablehead">Status</p>
+                    <p class="status">
+                      Ongoing
+                    </p>
+                  </td>
+                  <td class="options"> <a href=""><i class="fa fa-info" aria-hidden="true"></i></a></td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#">
+                      <div class="event">
+                        <img src="/Image.png" alt="">
+                        <h4>
+                          A FEMINIST'S GUIDE
+                          TO BOTANY: Online Botanical
+                          Painting Session
+                        </h4>
+                      </div>
+                    </a>
+                  </td>
+                  <td>
+                    <p class="tablehead">Starts</p>
+                    <p class="start-date">Thursday, Nov 26</p>
+                    <p class="start-time">7:30pm WAT</p>
+                  </td>
+                  <td>
+                    <p class="tablehead">Stops</p>
+                    <p class="stop-date">Thursday, Nov 26</p>
+                    <p class="stop-time">7:30pm WAT</p>
+                  </td>
+                  <td>
+                    <p class="tablehead">Amount</p>
+                    <p class="ticket-amount">5 Tickets</p>
+                  </td>
+                  <td>
+                    <p class="tablehead">Status</p>
+                    <p class="status">
+                      Ongoing
+                    </p>
+                  </td>
+                  <td class="options"> <a href=""><i class="fa fa-info" aria-hidden="true"></i></a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="see_more">
+            <h5> <a href=""> See More</a></h5>
+          </div>
+
+
+        </div>
+      </section>
+      <!--================ purchased Section ENds=================-->
+
+
+      <!--================ Event Records =================-->
+      <section class="pt-5 pb-4">
+        <h3>My Event Records</h3>
+        <div class="records pt-2 mt-2 ">
+          <div class="contain">
+            <div class="row">
+
+              <div class="col-lg-3">
+                <div class="event-record">
+                  <div class="event-record-header">
+                    <h3>February 12</h3>
+                  </div>
+                  <div class="event-record-body">
+                    <div class="event">
+                      <img src="/Image@2x.png" alt="">
+                      <h4>
+                        <b>A FEMINIST'S GUIDE
+                          TO BOTANY:</b> Online Botanical Painting Session
+                      </h4>
+                    </div>
+
+                    <div class="sales-progress-bar pt-4 pb-3">
+                      <p class="sold">Sold</p>
+                      <p>60/120</p>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width:50%"></div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-lg-5">
+                        <div class="status">
+                          <p>Status</p>
+                          <span class="Onsale">On sale</span>
+                        </div>
+                      </div>
+                      <div class="col-lg-5">
+                        <div class="income">
+                          <p>Income</p>
+                          <span>₦60,000</span>
+
+                        </div>
+                      </div>
+                      <div class="col-lg-1">
+                        <div>
+                          <span class="record-info "><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="event-record">
+                  <div class="event-record-header">
+                    <h3>February 12</h3>
+                  </div>
+                  <div class="event-record-body">
+                    <div class="event">
+                      <img src="/Image@2x.png" alt="">
+                      <h4>
+                        <b>A FEMINIST'S GUIDE
+                          TO BOTANY:</b> Online Botanical
+                        Painting Session
+                      </h4>
+                    </div>
+
+                    <div class="sales-progress-bar pt-4 pb-3">
+                      <p class="sold">Sold</p>
+                      <p>120/120</p>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width:100%"></div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-lg-5">
+                        <div class="status">
+                          <p>Status</p>
+                          <span class="soldout">Sold Out</span>
+                        </div>
+                      </div>
+                      <div class="col-lg-5">
+                        <div class="income">
+                          <p>Income</p>
+                          <span>₦120,000</span>
+
+                        </div>
+                      </div>
+                      <div class="col-lg-1">
+                        <div>
+                          <span class="record-info "><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="event-record">
+                  <div class="event-record-header">
+                    <h3>February 12</h3>
+                  </div>
+                  <div class="event-record-body">
+                    <div class="event">
+                      <img src="/Image@2x.png" alt="">
+                      <h4>
+                        <b>A FEMINIST'S GUIDE
+                          TO BOTANY:</b> Online Botanical
+                        Painting Session
+                      </h4>
+                    </div>
+
+                    <div class="sales-progress-bar pt-4 pb-3">
+                      <p class="sold">Sold</p>
+                      <p>0/120</p>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width:0%"></div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-lg-5">
+                        <div class="status">
+                          <p>Status</p>
+                          <span class="pending">Pending</span>
+                        </div>
+                      </div>
+                      <div class="col-lg-5">
+                        <div class="income">
+                          <p>Income</p>
+                          <span>₦60,000</span>
+
+                        </div>
+                      </div>
+                      <div class="col-lg-1">
+                        <div>
+                          <span class="record-info "><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="event-record">
+                  <div class="event-record-header">
+                    <h3>February 12</h3>
+                  </div>
+                  <div class="event-record-body">
+                    <div class="event">
+                      <img src="/Image@2x.png" alt="">
+                      <h4>
+                        <b>A FEMINIST'S GUIDE
+                          TO BOTANY:</b> Online Botanical
+                        Painting Session
+                      </h4>
+                    </div>
+
+                    <div class="sales-progress-bar pt-4 pb-3">
+                      <p class="sold">Sold</p>
+                      <p>60/120</p>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width:50%"></div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-lg-5">
+                        <div class="status">
+                          <p>Status</p>
+                          <span class="Onsale">On sale</span>
+                        </div>
+                      </div>
+                      <div class="col-lg-5">
+                        <div class="income">
+                          <p>Income</p>
+                          <span>₦60,000</span>
+
+                        </div>
+                      </div>
+                      <div class="col-lg-1">
+                        <div>
+                          <span class="record-info "><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="event-record">
+                  <div class="event-record-header">
+                    <h3>February 12</h3>
+                  </div>
+                  <div class="event-record-body">
+                    <div class="event">
+                      <img src="/Image@2x.png" alt="">
+                      <h4>
+                        <b>A FEMINIST'S GUIDE
+                          TO BOTANY:</b> Online Botanical
+                        Painting Session
+                      </h4>
+                    </div>
+
+                    <div class="sales-progress-bar pt-4 pb-3">
+                      <p class="sold">Sold</p>
+                      <p>120/120</p>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width:100%"></div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-lg-5">
+                        <div class="status">
+                          <p>Status</p>
+                          <span class="soldout">Sold Out</span>
+                        </div>
+                      </div>
+                      <div class="col-lg-5">
+                        <div class="income">
+                          <p>Income</p>
+                          <span>₦120,000</span>
+
+                        </div>
+                      </div>
+                      <div class="col-lg-1">
+                        <div>
+                          <span class="record-info "><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="event-record">
+                  <div class="event-record-header">
+                    <h3>February 12</h3>
+                  </div>
+                  <div class="event-record-body">
+                    <div class="event">
+                      <img src="/Image@2x.png" alt="">
+                      <h4>
+                        <b>A FEMINIST'S GUIDE
+                          TO BOTANY:</b> Online Botanical
+                        Painting Session
+                      </h4>
+                    </div>
+
+                    <div class="sales-progress-bar pt-4 pb-3">
+                      <p class="sold">Sold</p>
+                      <p>0/120</p>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width:0%"></div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-lg-5">
+                        <div class="status">
+                          <p>Status</p>
+                          <span class="pending">Pending</span>
+                        </div>
+                      </div>
+                      <div class="col-lg-5">
+                        <div class="income">
+                          <p>Income</p>
+                          <span>₦0</span>
+
+                        </div>
+                      </div>
+                      <div class="col-lg-1">
+                        <div>
+                          <span class="record-info "><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="see_more mt-3 pt-5 pb-5">
+            <h5> <a href=""> See More</a></h5>
+          </div>
+
+        </div>
+
+      </section>
+      <!--================ Event Records ENds=================-->
+
+
+    </div>
+  </div>
+
+  <!--================ Start footer Area  =================-->
+  <footer class="footer pt-3">
+    <div class="footer-area">
+      <div class="container">
+        <div class="row section_gap">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="single-footer-widget tp_widgets">
+              <h4 class="footer_title large_title">FAQs</h4>
+              <ul>
+                <li><a href="#">How does Ticketta Work?</a></li>
+                <li><a href="#">How do I Create Events</a></li>
+                <li><a href="#">How does Ticketta Work?</a></li>
+                <li><a href="#">How do I Create Events</a></li>
+                <li><a href="#">How does Ticketta Work?</a></li>
+                <li><a href="#">How do I Create Events</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="offset-lg-1 col-lg-2 col-md-6 col-sm-6">
+            <div class="single-footer-widget tp_widgets">
+              <h4 class="footer_title">Quick Links</h4>
+              <ul class="list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Tickets</a></li>
+                <li><a href="#">Sign up</a></li>
+                <li><a href="#">Log In</a></li>
+                <li><a href="#">Help</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-6">
+            <div class="single-footer-widget tp_widgets">
+              <h4 class="footer_title">Connect With Us</h4>
+              <span><a href="#"><i class="ti-facebook"></i></a></span>
+              <span><a href="#"><i class="ti-twitter"></i></a></span>
+              <span><a href="#"><i class="ti-instagram"></i></a></span>
+              <span><a href="#"><i class="ti-linkedin"></i></a></span>
+            </div>
+          </div>
+
+          <div class="offset-lg-1 col-lg-3 col-md-6 col-sm-6">
+            <div class="single-footer-widget tp_widgets">
+              <h4 class="footer_title">Contact Us</h4>
+              <div class="ml-40">
+                <p class="sm-head">
+                  <span class="fa fa-location-arrow"></span>
+                  Head Office
+                </p>
+                <p>123, Main Street, Your City</p>
+
+                <p class="sm-head">
+                  <span class="fa fa-phone"></span>
+                  Phone Number
+                </p>
+                <p>
+                  +123 456 7890 <br>
+                  +123 456 7890
+                </p>
+
+                <p class="sm-head">
+                  <span class="fa fa-envelope"></span>
+                  Email
+                </p>
+                <p>
+                  free@infoexample.com <br>
+                  www.infoexample.com
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row d-flex">
+          <p class="col-lg-12 footer-text text-center">
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy; Ticketta
+            <script>document.write(new Date().getFullYear());</script> All rights reserved
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--================ End footer Area  =================-->
+
+
+
+
+
+
+
+
+  <script src="js/jquery/jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="tickett.js"></script>
+  <script src="dashboard.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+
+
+
+
+</body>
+
+</html>

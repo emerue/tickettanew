@@ -1,0 +1,643 @@
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: "poppins", sans-serif;
+    /* background-image: url("/bg.png"); */
+    background-size: cover;
+}
+
+.navbar-toggler span{
+    background:#02113a;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "poppins", sans-serif;
+}
+.header_area{
+    transition: all .75s ease ;
+}
+
+.main_menu{
+    background:none !important;
+}
+
+.headerfixed{
+    position: fixed !important;
+    top: 0px !important;
+    background-color: white; 
+}
+/* make header fixed on scroll */
+.nav-shop .button{
+    background-color: #ffa600;
+    color: #FFFAE4;
+    border: none;
+    transition: all .3s ease;
+}
+
+.nav-shop .button:hover{
+    background-color: #02113a;
+    color: #FFFAE4;
+    border: none;
+}
+
+
+
+.hero-banner__content{
+    margin-bottom: 150px;
+}
+
+.hero-banner__img {
+    top: 0px;
+}
+.img-fluid{
+    height: 750px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.blue{
+    background-image: -webkit-linear-gradient(45deg, #02113a 90%, #1D50DE 150%) ;
+}
+.blue h4 ,h1{
+    color:#FFFAE4;
+}
+
+.hero-banner__content h4{
+    font-size: 22px;
+    font-family: "poppins",sans-serif;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.hero-banner__content h1{
+    font-size: 35px;
+    font-family: "poppins",sans-serif;
+}
+
+.button-hero{
+    margin-top:30px;
+    /* border: 1px solid white; */
+    background-color: #FFFAE4;
+    color: #1D50DE;
+    transition: all .4s ease;
+}
+
+.button-hero:hover{
+    border: 1px solid #FFFAE4;
+    background-color: none;
+    color:#FFFAE4;
+}
+
+
+
+
+/* searchside */
+.searchsection{
+    width: 80%;
+    padding: 5%;
+    height: 450px;
+    margin:-80px auto;
+    margin-bottom: 50px;
+    background-color: whitesmoke;
+    position: relative;
+    z-index: 2;
+    box-shadow: 1px 1px 50px 2px rgba(0, 0, 0, 0.2);
+
+}
+
+.searchsecdiv{
+    margin: 45px auto;
+}
+.searchdiv{
+    width: 80%;
+    margin: 0px auto;
+    box-shadow: 1px 1px 10px 2px rgba(51, 51, 51, 0.1); 
+    border-radius:30px;
+    
+    /* border: 1px solid #1D50DE!important; */
+}
+.searchdiv .form-control{
+    border: none !important;
+    background-color: white !important;
+    padding: 1.4em;
+    border-radius: 30px;
+}
+
+.searchdiv .input-group-addon{
+    background-color: #02113a;
+    padding:10px 2% 0 2%;
+    text-align: center;
+    color: #FFFAE4;
+    border-radius: 0px 30px 30px 0px;
+}
+
+.searchdiv .input-group-addon:hover{
+    cursor: pointer; 
+    background-image: -webkit-linear-gradient(45deg, #1D50DE 20%, #24DCE9 150%) ;
+    /* background-image: -webkit-linear-gradient(45deg, #f8b02a 20%,  #ffa600 150%) ; */
+}
+
+.filters{
+    margin: 50px auto;
+    width: 80%;
+    text-align: center;
+}
+
+.filters h6{
+    font-family: "poppins",sans-serif;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: 600;
+    text-align: left;
+}
+/* .filters ul:nth-child(3){
+    margin-left: 40px;
+} */
+
+.filter-item{
+    font-weight: 500;
+    border-radius:30px;
+    font-size: 0.7em;
+    border: 1px solid #02113a;
+    color: #02113a;
+    display:inline-block;
+    padding:1%;
+    margin-right:15px;
+    width:100px;
+    text-align: center;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.filter-item:hover{
+    /* color: #FFFAE4;
+    background-color: #02113a; */
+    border: 1px solid #1D50DE;
+}
+
+
+.search-filter-item-hover{
+    color: #FFFAE4;
+    background-color: #02113a;
+    border: none;
+}
+
+/* eventlist starts */
+.eventlist h2{
+    font-family: "poppins", sans-serif;
+    font-size:3em;
+}
+.eventlist .container-fluid{
+    width: 90%;
+}
+
+.radiofilters{
+    background-color: #02113a;
+    width: 100%;
+    padding: 1%;
+    
+}
+
+.radiofilters .form-check{
+    display: inline-block;
+    color: white;
+    margin-right: 26px;
+    margin-left: 26px;
+    font-size: 1em;
+    font-weight: 600;
+    
+}
+.ticket_card{
+    /* height: 400px; */
+    background-color: white;
+    transition: all .4s ease;
+    margin-bottom: 30px;
+    
+    /* width: 90%; */
+}
+
+.ticket_card:hover{
+    box-shadow: 0px 0px 50px 2px rgba(0, 0, 0, 0.2);
+}
+
+.ticket_img img{
+    max-width: 100%;
+    width: 100%;
+    height:10em;
+    object-fit:cover;
+    
+    /* object-position: center; */
+}
+
+.date_time{
+    background-color: #02113a;
+    color: #FFFAE4;
+    width: 40%;
+    font-size: 0.7em;
+    font-weight: 800;
+    padding: 2% 2% 1% 2%;
+    position: relative;
+    z-index: 2;
+    margin-top: -12.8%;
+}
+
+.date_time li{
+    margin-top: -2px;
+}
+
+.ticket_card_content{
+    padding: 3%;
+    width: 100%;
+}
+
+.ticket_card_content a{
+    font-weight: 700;
+    font-size: 0.8em;
+    color: #1D50DE;
+}
+
+.ticket_card_content h4{
+    font-weight: 600;
+    font-family: "poppins", sans-serif;
+    margin-top: 2%;
+    font-size: 20px;
+}
+
+.love i{
+    border: 1px solid red;
+    color: red;
+    border-radius: 100px;
+    padding: .5em;
+    margin-top: 8%;
+    font-size: 1em;
+}
+
+
+.love i:hover{
+    cursor: pointer;
+    color: #c20e0e;
+    border: 1px solid #d10202;
+}
+
+.love b{
+    color:rgb(59, 59, 59);
+    font-family: "poppins",sans-serif;
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+
+
+
+
+.purchase{
+    float: right;
+    font-size: .7em;
+    border: 1px solid #02113a;
+    /* background-color: #1D50DE; */
+    background-color: #02113a;
+    border-radius: 30px;
+    font-weight: 500;
+    padding: 4px 16px;
+    color: #FFFAE4;
+    transition: all .4s ease;
+    margin-top:23px;
+    
+}
+
+.purchase:hover{
+    cursor: pointer;
+    background-image: none;
+    padding: 4px 16px;
+   background-color: #396eff;
+    border: 1px solid #396eff;
+}
+
+.see_more h5{
+    font-family: "poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    color: #1D50DE;
+    border: 1px solid #1D50DE;;
+    border-radius: 15px;
+    padding: 7px;
+    margin: -15px auto;
+    margin-bottom: 20px;
+    width: 10%;
+    text-align: center;
+    transition: all .4s ease;
+    background-color: #ffff;
+}
+
+
+
+.see_more h5:hover{
+    cursor: pointer;
+    background-image: none;
+   /* background-color: #1D50DE; */
+   background-color: #02113a;
+    color: #FFFAE4;
+}
+
+
+/* top event starts */
+.black{
+    background-image: -webkit-linear-gradient(45deg, #1D50DE 60%, #24DCE9 150%) ;
+}
+.topevent{
+    background-image: url("/img/topevent.jpg");
+    background-size: cover;
+    background-position:center;
+    width: 100;
+    padding: 18%;
+    margin: 2%;
+}
+/* top events ends here */
+
+/* browse events starts here */
+.browse_event .container-fluid{
+    width: 90%;
+    
+}
+.browse_event h1{
+    font-family: "poppins", sans-serif;
+    font-weight: 700;
+    color: #02113a;
+    font-size: 3em;
+    text-transform: uppercase;
+    padding:3px;
+}
+
+.browse_event h6{
+    font-family: "poppins", sans-serif;
+    font-weight: 400;
+    color: black;
+    padding-bottom:3px;
+    width: 80%;
+    margin: 0px auto;
+}
+
+.browse_event_content{
+    text-align: center;
+    margin: 0px auto;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    width: 80%;
+}
+
+.buttons{
+    margin:10px auto;
+    text-align: center;
+}
+
+.browse_event .btn:nth-child(1){
+    display: inline-block;
+    font-size: 1em;
+    margin-right: 5px;
+    border: 1px solid #1D50DE;
+    background-color: #1D50DE;
+    border-radius: 30px;
+    font-weight: 400;
+    padding: 8px 17px;
+    color: #FFFAE4;
+    transition: all .4s ease;
+}
+
+.browse_event .btn:nth-child(1):hover{
+    border: 1px solid #02113a;
+    background-color: #02113a;
+  
+}
+.browse_event .btn:nth-child(2){
+    display: inline-block;
+    font-size: 1em;
+    margin-right: 5px;
+    border: 1.5px solid #1D50DE;
+    border-radius: 30px;
+    font-weight: 400;
+    padding: 8px 17px;
+    color: #1D50DE;
+    transition: all .4s ease;
+}
+
+.browse_event .btn:nth-child(2):hover{
+    background-color: #02113a;
+    border: 1px solid #02113a;
+    color:#FFFAE4;
+}
+
+
+
+/* this is for the swipers */
+.browse_card{
+    position: relative;
+    width:300px;
+    margin: 0px auto;
+    
+}
+.browse_card img{
+    width: 100%;
+    height:26em;
+    object-fit:cover;
+}
+
+
+.browse_text{
+    width: 90%;
+    position: relative;
+    bottom:170px;
+    padding: 12px;
+    color: #FFFAE4;  
+}
+
+.browse_text h3{
+    font-family: "poppins", sans-serif;
+    color: #FFFAE4;
+    font-size: 2em;
+}
+
+
+.browse_text p{
+    font-family: "poppins", sans-serif;
+    font-size: .8em;
+    color: #ffff;
+}
+
+.arrow{
+    color: #FFFAE4;
+    font-size: 1.5em;
+    position: absolute;
+    top:15px;
+    left: 260px;
+}
+
+.arrow:hover{
+    box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.2);
+    color: #f5eab8;
+}
+
+.swiper-container2 .swiper-slide{
+    width:300px;
+    height: 600px;
+}
+/* .swiper-wrapper{
+    padding: 0% !important;
+} */
+.swiper-container2{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    z-index: 1;
+    height: 400px;
+    width: 60%;
+}
+/* swipers styling ends here */
+
+
+
+.footer-area{
+    color: #FFFAE4 !important;
+    background-color: #02113a;
+    /* background-image: -webkit-linear-gradient(45deg, #1D50DE 60%, #24DCE9 150%) ; */
+}
+.tp_widgets h4{
+    font-family: "poppins", sans-serif !important;
+    color: #396eff;
+}
+.tp_widgets li{
+    padding: 5px;
+}
+.tp_widgets a{
+    color: #FFFAE4;
+}
+.tp_widgets a:hover{
+    text-decoration: underline;
+}
+
+.tp_widgets span a{
+    color: #f5eab8;
+    padding: 5px;
+}
+
+
+
+.tp_widgets .list a:hover{
+    color: #1D50DE !important;
+}
+
+.footer-area{
+    padding: 95px 0px 95px !important;
+}
+
+.footer-bottom{
+    background-color: #1D50DE;
+}
+
+
+
+@media (max-width: 575px){
+.header_area+section, .header_area+row, .header_area+div {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.swiper-container2{
+    width: 100%;
+    margin: 10px auto;
+}
+
+
+
+}
+
+@media only screen and (max-width:1024px){
+    
+.img-fluid{
+    height: 600px;
+}
+
+    .header_area+section, .header_area+row, .header_area+div {
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+    
+    .hero-banner__content{
+        margin-top: 50px;
+        padding-bottom: 0px;
+    }
+    .searchsection{
+        width: 100%;
+    }
+
+    .searchdiv{
+        width: 100%;
+    }
+    
+    .searchdiv .input-group-addon{
+        padding: 10px 5% 0 5%;
+    }
+    .filter-item{
+        margin-bottom: 5px;
+    }
+
+    .filters ul:nth-child(3){
+        margin-top: -5px;
+    }
+
+
+    .radiofilters{
+        padding: 2%;
+    }
+
+    .radiofilters .form-check{
+        display: inline-block;
+        margin-right: 6px;
+        margin-left: 6px; 
+    }
+
+    .ticket_card{
+        border-bottom: 4px solid #1D50DE;
+        padding-bottom: 5%;
+    }
+
+    .see_more h5{
+        font-size: 1em;
+        color: #1D50DE;
+        border: 1px solid #1D50DE;
+        border-radius: 15px;
+        padding: 7px;
+        margin: -5px auto;
+        margin-bottom: 20px;
+        width: 30%;
+    }
+
+    .buttons{
+        padding: 0%;
+    }
+
+
+    .browse_event h1{
+        font-size: 1.5em;
+        /* padding: 1px; */
+    }
+    .browse_event h6{
+       width: 100;
+    }
+
+    .browse_event_content{
+        width: 100%;
+    }
+
+    .swiper-container2{
+        width: 100%;
+        margin: 18px auto;
+    }
+}

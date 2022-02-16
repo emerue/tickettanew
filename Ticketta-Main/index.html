@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ticketta</title>
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="css/themify-icons/themify-icons.css">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:100,200,400,300,500,600,700' rel='stylesheet'>
+
+  <link rel="stylesheet" href="ticketta.css">
+</head>
+
+<body>
+  <!--================ Start Header Menu Area =================-->
+  <header class="header_area">
+    <div class="main_menu">
+
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand logo_h" href="index.html">Ticketta</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+            <ul class="nav navbar-nav menu_nav ml-auto">
+              <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="index.html">Overview</a></li>
+              <li class="nav-item"><a class="nav-link" href="index.html">Tickets</a></li>
+              
+              <li class="nav-item"><a class="nav-link" href="index.html">Help</a></li>
+              <li class="nav-item submenu dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                  aria-expanded="false">Sign in</a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                  <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <ul class="nav-shop">
+              <li class="nav-item"><a class="button button-header" href="#">Create Event</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!--================ End Header Menu Area =================-->
+
+
+  <!--================ Hero Header =================-->
+  <div id="hero" class="blue">
+    <div class="row no-gutters align-items-center">
+      <div class="col-lg-4 col-sm-6 d-block d-sm-block ri">
+        <!-- <div class="swiper-container">
+          <div class="swiper-wrapper">
+             
+      <div class="swiper-slide">
+        <div class="hero-banner__img">
+          <img class="img-fluid" src="img/home/hero-banner.jpg" alt="">
+        </div>
+      </div>
+
+        <div class="swiper-slide">
+          <div class="hero-banner__img">
+            <img class="img-fluid" src="img/b2.jpg" alt="">
+          </div>
+        </div>
+  
+          </div>
+
+        </div> -->
+        
+        <div class="hero-banner__img">
+          <img class="img-fluid" src="img/home/hero-banner.jpg" alt="">
+        </div>
+      
+      </div>
+    
+
+      <div class="col-sm-7 col-lg-6 col-md-6 offset-lg-1 pl-4 pl-md-5 pl-lg-0">
+        <div class="hero-banner__content">
+          <h4>Welcome To Ticketta</h4>
+          <h1>Online Platform for Events</h1>
+          <a class="button button-hero" href="#">Browse Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--================ Hero Header Ends =================-->
+
+
+  <!--================ Search Section =================-->
+  <div class="container-fluid">
+    <div class="searchsection">
+      <div class="searchsecdiv">
+        <div class="searchdiv">
+          <div class="input-group">
+            <input id="search" type="text" class="form-control" name="search" placeholder="Search Events Here">
+            <span class="input-group-addon"><i class="ti-search"></i></span>
+          </div>
+        </div>
+
+        <div class="filters">
+          <h6>Search In:</h6>
+
+          <ul class="py-2">
+            <li class="filter-item">Movies</li>
+            <li class="filter-item">Games</li>
+            <li class="filter-item">Sports</li>
+            <li class="filter-item">Movies</li>
+            <li class="filter-item">Games</li>
+            <li class="filter-item">Sports</li>
+          </ul>
+          <ul>
+            <li class="filter-item">Movies</li>
+            <li class="filter-item">Games</li>
+            <li class="filter-item">Sports</li>
+            <li class="filter-item">Movies</li>
+            <li class="filter-item">Games</li>
+            <li class="filter-item">Sports</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!--================ Search Section Ends =================-->
+
+
+  <!--================ Event Section =================-->
+  <div class="eventlist pb-3 pt-3">
+    <div class="container-fluid">
+      <div class="eventlist-nav">
+        <h2 class="mb-3">Featured List</h2>
+        <div class="radiofilters">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="radios" id="radios1" value="option1">
+            <label class="form-check-label" for="radios1">
+              All
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="radios" id="radios2" value="option2">
+            <label class="form-check-label" for="radios2">
+              Today
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="radios" id="radios3" value="option3">
+            <label class="form-check-label" for="radios3">
+              This Week
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="radios" id="radios4" value="option4">
+            <label class="form-check-label" for="radios4">
+              This Month
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="radios" id="radios5" value="option5">
+            <label class="form-check-label" for="radios5">
+              Free
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="radios" id="radios6" value="option6">
+            <label class="form-check-label" for="radios6">
+              For You
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="eventlist-content pt-1 mt-5">
+
+        <div class="row event_tickets pb-5"> 
+          <!-- first card -->
+          <div class="col-lg-3 col-md-6">
+            <div class="ticket_card">
+              <div class="row mobile_card">
+                <div class="container">
+                  <div class="ticket_img">
+                    <img src="/img/tickets/1.jpg" alt="">
+                    <ul class="date_time">
+                      <li> Fri, Nov 18, 2020</li>
+                      <li> 7:30 PM WAT</li>
+                    </ul>
+                  </div>
+                  <div class="ticket_card_content">
+
+                    <a href="#map"><i class="fa fa-map-marker-alt"></i> Lagos</a>
+                    <h4>
+                      A FEMINIST'S GUIDE
+                      TO BOTANY: Online Botanical
+                      Painting Session
+                    </h4>
+
+                   
+                    <span class="love"><i class="fa fa-heart"></i> <b>65</b></span>
+
+                    <p class="purchase">Purchase</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- first card end -->
+          <div class="col-lg-3 col-md-6">
+            <div class="ticket_card">
+              <div class="row mobile_card">
+                <div class="container">
+                  <div class="ticket_img">
+                    <img src="/img/tickets/1.jpg" alt="">
+                    <ul class="date_time">
+                      <li> Fri, Nov 18, 2020</li>
+                      <li> 7:30 PM WAT</li>
+                    </ul>
+                  </div>
+                  <div class="ticket_card_content">
+
+                    <a href="#map"><i class="fa fa-map-marker-alt"></i> Lagos</a>
+                    <h4>
+                      A FEMINIST'S GUIDE
+                      TO BOTANY: Online Botanical
+                      Painting Session
+                    </h4>
+
+                   
+                    <span class="love"><i class="fa fa-heart"></i> <b>65</b></span>
+
+                    <p class="purchase">Purchase</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="ticket_card">
+              <div class="row mobile_card">
+                <div class="container">
+                  <div class="ticket_img">
+                    <img src="/img/tickets/1.jpg" alt="">
+                    <ul class="date_time">
+                      <li> Fri, Nov 18, 2020</li>
+                      <li> 7:30 PM WAT</li>
+                    </ul>
+                  </div>
+                  <div class="ticket_card_content">
+
+                    <a href="#map"><i class="fa fa-map-marker-alt"></i> Lagos</a>
+                    <h4>
+                      A FEMINIST'S GUIDE
+                      TO BOTANY: Online Botanical
+                      Painting Session
+                    </h4>
+
+                   
+                    <span class="love"><i class="fa fa-heart"></i> <b>65</b></span>
+
+                    <p class="purchase">Purchase</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="ticket_card">
+              <div class="row mobile_card">
+                <div class="container">
+                  <div class="ticket_img">
+                    <img src="/img/tickets/1.jpg" alt="">
+                    <ul class="date_time">
+                      <li> Fri, Nov 18, 2020</li>
+                      <li> 7:30 PM WAT</li>
+                    </ul>
+                  </div>
+                  <div class="ticket_card_content">
+
+                    <a href="#map"><i class="fa fa-map-marker-alt"></i> Lagos</a>
+                    <h4>
+                      A FEMINIST'S GUIDE
+                      TO BOTANY: Online Botanical
+                      Painting Session
+                    </h4>
+
+                   
+                    <span class="love"><i class="fa fa-heart"></i> <b>65</b></span>
+
+                    <p class="purchase">Purchase</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="ticket_card">
+              <div class="row mobile_card">
+                <div class="container">
+                  <div class="ticket_img">
+                    <img src="/img/tickets/1.jpg" alt="">
+                    <ul class="date_time">
+                      <li> Fri, Nov 18, 2020</li>
+                      <li> 7:30 PM WAT</li>
+                    </ul>
+                  </div>
+                  <div class="ticket_card_content">
+
+                    <a href="#map"><i class="fa fa-map-marker-alt"></i> Lagos</a>
+                    <h4>
+                      A FEMINIST'S GUIDE
+                      TO BOTANY: Online Botanical
+                      Painting Session
+                    </h4>
+
+                   
+                    <span class="love"><i class="fa fa-heart"></i> <b>65</b></span>
+
+                    <p class="purchase">Purchase</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="ticket_card">
+              <div class="row mobile_card">
+                <div class="container">
+                  <div class="ticket_img">
+                    <img src="/img/tickets/1.jpg" alt="">
+                    <ul class="date_time">
+                      <li> Fri, Nov 18, 2020</li>
+                      <li> 7:30 PM WAT</li>
+                    </ul>
+                  </div>
+                  <div class="ticket_card_content">
+
+                    <a href="#map"><i class="fa fa-map-marker-alt"></i> Lagos</a>
+                    <h4>
+                      A FEMINIST'S GUIDE
+                      TO BOTANY: Online Botanical
+                      Painting Session
+                    </h4>
+
+                   
+                    <span class="love"><i class="fa fa-heart"></i> <b>65</b></span>
+
+                    <p class="purchase">Purchase</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="ticket_card">
+              <div class="row mobile_card">
+                <div class="container">
+                  <div class="ticket_img">
+                    <img src="/img/tickets/1.jpg" alt="">
+                    <ul class="date_time">
+                      <li> Fri, Nov 18, 2020</li>
+                      <li> 7:30 PM WAT</li>
+                    </ul>
+                  </div>
+                  <div class="ticket_card_content">
+
+                    <a href="#map"><i class="fa fa-map-marker-alt"></i> Lagos</a>
+                    <h4>
+                      A FEMINIST'S GUIDE
+                      TO BOTANY: Online Botanical
+                      Painting Session
+                    </h4>
+
+                   
+                    <span class="love"><i class="fa fa-heart"></i> <b>65</b></span>
+
+                    <p class="purchase">Purchase</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="ticket_card">
+              <div class="row mobile_card">
+                <div class="container">
+                  <div class="ticket_img">
+                    <img src="/img/tickets/1.jpg" alt="">
+                    <ul class="date_time">
+                      <li> Fri, Nov 18, 2020</li>
+                      <li> 7:30 PM WAT</li>
+                    </ul>
+                  </div>
+                  <div class="ticket_card_content">
+
+                    <a href="#map"><i class="fa fa-map-marker-alt"></i> Lagos</a>
+                    <h4>
+                      A FEMINIST'S GUIDE
+                      TO BOTANY: Online Botanical
+                      Painting Session
+                    </h4>
+
+                   
+                    <span class="love"><i class="fa fa-heart"></i> <b>65</b></span>
+
+                    <p class="purchase">Purchase</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+         
+      
+        </div>
+
+        
+
+      </div>
+    </div>
+    <div class="see_more">
+      <h5>See More</h5>
+    </div>
+
+  </div>
+  <!--================ Event Section ENds=================-->
+
+
+
+
+  <!--================ top event=================-->
+  <div class="black">
+    <div class="topevent">
+    </div>
+  </div>
+  <!--================ top event ends=================-->
+
+
+<!--================ browse event=================-->
+<div class="browse_event pb-5">
+  <div class="container-fluid">
+      <div class="browse_event_content">
+        <h1>Popular 0n Ticketta</h1>
+        <h6>Home is behind, the world ahead and there are many paths
+          to tread through shadows to the edge.Home is behind, the world ahead and there are many paths
+          to tread through shadows to the edge.Home is behind, the world ahead and there are many paths
+          to tread through shadows to the edge.Home is behind, the world ahead and there are many paths
+          to tread through shadows to the edge.</h6> 
+          <div class="buttons">
+            <a class="btn" href="#">Browse Event</a>
+            <a class="btn" href="#">Create Event</a>
+          </div>
+      </div>
+
+        <div class="swiper-container2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="browse_card">
+                <img src="/img/b1.jpg" alt="">
+                <a href="#"><span class="arrow fa fa-arrow-circle-right">
+                </span></a>
+                <div class="browse_text">
+                  <h3>Movies</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. 
+                    Architecto cupiditate repellat amet
+                    consequatur laboriosam quis commodi maxime.</p>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="swiper-slide">
+              <div class="browse_card">
+                <img src="/img/b2.jpg" alt="">
+                <a href="#"><span class="arrow fa fa-arrow-circle-right">
+                </span></a>
+                <div class="browse_text">
+                  <h3>Movies</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. 
+                    Architecto cupiditate repellat amet
+                    consequatur laboriosam quis commodi maxime.</p>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="swiper-slide">
+              <div class="browse_card">
+                <img src="/img/b3.jpg" alt="">
+                <a href="#"><span class="arrow fa fa-arrow-circle-right">
+                </span></a>
+                <div class="browse_text">
+                  <h3>Movies</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. 
+                    Architecto cupiditate repellat amet
+                    consequatur laboriosam quis commodi maxime.</p>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="swiper-slide">
+              <div class="browse_card">
+                <img src="/img/b4.jpg" alt="">
+                <a href="#"><span class="arrow fa fa-arrow-circle-right">
+                </span></a>
+                <div class="browse_text">
+                  <h3>Movies</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. 
+                    Architecto cupiditate repellat amet
+                    consequatur laboriosam quis commodi maxime.</p>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="swiper-slide">
+              <div class="browse_card">
+                <img src="/img/b5.jpg" alt="">
+                <a href="#"><span class="arrow fa fa-arrow-circle-right">
+                </span></a>
+                <div class="browse_text">
+                  <h3>Movies</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. 
+                    Architecto cupiditate repellat amet
+                    consequatur laboriosam quis commodi maxime.</p>
+                </div>
+              </div>
+
+            </div>
+           
+          </div>
+        </div>
+    </div>
+  </div>
+<!--================ browse event end=================-->
+
+
+
+
+ <!--================ Start footer Area  =================-->	
+ <footer class="footer">
+  <div class="footer-area">
+    <div class="container">
+      <div class="row section_gap">
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="single-footer-widget tp_widgets">
+            <h4 class="footer_title large_title">FAQs</h4>
+           <ul>
+             <li><a href="#">How does Ticketta Work?</a></li>
+             <li><a href="#">How do I Create Events</a></li>
+             <li><a href="#">How does Ticketta Work?</a></li>
+             <li><a href="#">How do I Create Events</a></li>
+             <li><a href="#">How does Ticketta Work?</a></li>
+             <li><a href="#">How do I Create Events</a></li>
+           </ul>
+          </div>
+        </div>
+        <div class="offset-lg-1 col-lg-2 col-md-6 col-sm-6">
+          <div class="single-footer-widget tp_widgets">
+            <h4 class="footer_title">Quick Links</h4>
+            <ul class="list">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Overview</a></li>
+              <li><a href="#">Tickets</a></li>
+              <li><a href="#">Sign up</a></li>
+              <li><a href="#">Log In</a></li>
+              <li><a href="#">Help</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6">
+          <div class="single-footer-widget tp_widgets">
+            <h4 class="footer_title">Connect With Us</h4>
+            <span><a href="#"><i class="ti-facebook"></i></a></span>
+            <span><a href="#"><i class="ti-twitter"></i></a></span>
+            <span><a href="#"><i class="ti-instagram"></i></a></span>
+            <span><a href="#"><i class="ti-linkedin"></i></a></span>
+          </div>
+        </div>
+        
+        <div class="offset-lg-1 col-lg-3 col-md-6 col-sm-6">
+          <div class="single-footer-widget tp_widgets">
+            <h4 class="footer_title">Contact Us</h4>
+            <div class="ml-40">
+              <p class="sm-head">
+                <span class="fa fa-location-arrow"></span>
+                Head Office
+              </p>
+              <p>123, Main Street, Your City</p>
+
+              <p class="sm-head">
+                <span class="fa fa-phone"></span>
+                Phone Number
+              </p>
+              <p>
+                +123 456 7890 <br>
+                +123 456 7890
+              </p>
+
+              <p class="sm-head">
+                <span class="fa fa-envelope"></span>
+                Email
+              </p>
+              <p>
+                free@infoexample.com <br>
+                www.infoexample.com
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row d-flex">
+        <p class="col-lg-12 footer-text text-center">
+          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy; Ticketta <script>document.write(new Date().getFullYear());</script> All rights reserved </p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--================ End footer Area  =================-->
+
+
+
+
+
+
+
+
+
+
+
+  <script src="js/jquery/jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="tickett.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      autoplay: true,
+      // loop: true,
+      longSwipes: true,
+      longSwipesRatio: 9000,
+
+    });
+  </script>
+
+<script>
+  var swiper = new Swiper('.swiper-container2', {
+    effect: 'coverflow',
+    loop:true,
+    grabCursor: false,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+      rotate: 10,
+      stretch: 0,
+      depth: 300,
+      modifier: 1,
+      slideShadows: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  });
+</script>
+
+<script>
+  window.addEventListener("scroll", function(){
+
+ $("header").toggleClass("headerfixed", $(this).scrollTop() > 300)
+
+});
+
+</script>
+</body>
+
+</html>

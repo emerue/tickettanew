@@ -1,0 +1,333 @@
+body{
+    font-family: "poppins", sans-serif; 
+}
+
+.cash-out{
+    background-color: #4AC026;
+    color: #FFF;
+    border-radius: 30px;
+    border: none;
+    transition: all .3s ease;
+}
+
+.cash-out:hover{
+    background-color: #61b448;
+    color: #FFF;
+}
+
+.noexpand{
+    display: none;
+    background-color: #4AC026;
+    color: #FFF;
+    border-radius: 30px;
+    border: none;
+    transition: all .3s ease;
+}
+
+.noexpand:hover{
+    background-color: #61b448;
+    color: #FFF;
+}
+
+.container-fluid {
+    width: 90%;
+}
+
+.content{
+    padding: 40px 70px;
+}
+p{
+    margin-bottom: 0rem;
+}
+
+.event-info .image img{
+    object-fit: cover;
+    object-position: center;
+    width: 12em;
+    height: 12em;
+}
+
+.event-name h4{
+    overflow-wrap: break-word;
+    font-size: 1.2em;
+    width:90%;
+    font-family: "poppins", sans-serif;
+    font-weight: 500;
+    color: #02113A;
+}
+
+.event-status{
+    background-color:#1D50DE;
+    border-radius: 4px;
+    padding: 4px 15px;
+    width: 90%; 
+}
+
+.event-status i{
+    color: #3edf1d;
+    border-radius: 100%;
+    font-size: 1.22em;
+}
+
+.event-status .Onsale {
+    color: #ffffff;
+    font-family: "poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1.4em;;
+    /* padding: 20px; */
+    text-transform: capitalize;
+}
+
+.event-date h2, .event-location h2{
+    margin-bottom: 0rem;
+    color:#1D50DE;
+    font-size: 1.3em;
+    font-family: "poppins", sans-serif;
+    font-weight: 700;
+}
+
+.event-date p, .event-location p{
+    font-size: 1em;
+    color:#18191a;
+}
+
+.event-info hr {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+/* rightside */
+.contentevent{
+    border-right:1px dashed #CBCBCB;
+
+}
+.gross{
+    background-color: #02113A;
+    padding: 17px;
+    border-radius: 5px;
+    max-height: 100%;
+    height: 200px;
+}
+
+.gross-sales h1{
+    font-size: 1em;
+    font-weight: 500;
+    margin-bottom: 0.1rem;
+    color: #FFF;
+    text-transform: capitalize;
+}
+
+.gross-sales p{
+    font-size: .9em;
+    margin-bottom: 0rem;
+    color: #FFF;
+}
+
+.gross-sales .progress {
+    height: 6px;
+    width: 70%;
+    background-color: #FFF;
+}
+
+.progress-bar {
+    background-color: #F79645;
+}
+.gross-total p{
+    margin-bottom: 0rem;
+    text-align: right;
+    color: #FFFAE4;
+}
+
+.gross-total .total{
+    font-size: 2.7em;
+    font-weight: 700;
+    color: #ffffff;
+    overflow-wrap: break-word;
+    line-height: .8em;
+}
+
+.ticket-charge{
+    background-color: #1ea9c5;
+    padding: 15px;
+    border-radius: 5px;
+    height: 200px;
+}
+.ticket-charge h1{
+    font-size: 1em;
+    font-weight: 500;
+    margin-bottom: 0.1rem;
+    color: #FFF;
+    text-transform: capitalize;
+}
+.charge .total{
+    font-size: 2.7em;
+    padding: 30px;
+    font-weight: 700;
+    color: #ffffff;
+    overflow-wrap: break-word;
+    text-align: center;
+    line-height: .8em;
+}
+.ticket-charge p{
+    text-align: center;
+    color: white;
+    font-size: .7em;
+}
+
+.total-income{
+    background-color: #1D50DE;
+    border-radius: 5px;
+    height: 100%;
+    padding: 15px;
+    color: white;
+}
+
+.total-income h1{
+    font-size: 1.2em;
+}
+
+.total-income .income-list{
+    padding: 15px;
+}
+
+.total-income .income-list ol li p{
+    display: inline;
+}
+
+
+
+.type-table h5{
+    font-size: 1.7em;
+    color: #02113a;
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    padding: .5%;
+    text-transform:capitalize;
+}
+
+.type-table .table{
+    overflow-x:auto;
+}
+
+.type-table td p{
+    color: #18191a;
+    font-family: "poppins", sans-serif;
+    font-weight: 500;
+}
+
+.type-table .ticket-type p{
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.type-table thead{
+    border-bottom: 1px solid rgb(177, 177, 177);
+    background-color: #02113a;
+    color: #ffffff;
+}
+
+.customer_information h5,.event_url h5{
+    font-size: 1.7em;
+    color: #02113a;
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    padding: .5%;
+    text-transform:capitalize;
+}
+
+
+.customer_info,.url_text{
+    color: white;
+    background-color: #02113a;
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 1.5em;
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+}
+
+.customer_info:hover,.url_text:hover{
+    color: white;
+    background-color: #1D50DE;
+}
+
+.ang{
+    float: right;
+    margin-right: 10px;
+}
+
+.url_text>.url_copy{
+    float: right;
+    margin-right: 10px;
+}
+
+
+/* customer_table styling start*/
+.jumbo{
+    padding: 2%;
+    background-color: #ffffff;
+   
+}
+.jumbo h2{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-weight: 600;
+    font-size: 3em;
+    font-family: "poppins", sans-serif;
+}
+
+/* customer_table styling send*/
+
+.customer-table h5{
+    font-size: 1.7em;
+    color: #02113a;
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    padding: .5%;
+    text-transform:capitalize;
+}
+
+.customer-table .table{
+    overflow-x:auto;
+}
+
+.customer-table td p{
+    color: #18191a;
+    font-family: "poppins", sans-serif;
+    font-weight: 500;
+}
+
+.customer-table .purchase_id p{
+    font-weight: 600;
+    font-size: 1.3em;
+}
+
+.customer-table thead{
+    border-bottom: 1px solid rgb(177, 177, 177);
+    background-color: #02113a;
+    color: #ffffff;
+}
+
+
+
+@media (max-width: 575px){
+
+    .noexpand{
+        display:block !important;
+        padding: 0px 20px;
+
+    }
+
+    .nav-shop li {
+        display: inline-block;
+        margin-right: 0px;
+    }
+
+    .cash-out{
+        display: none;
+    }
+
+}
+    

@@ -1,0 +1,274 @@
+.nav-item .btn-danger{
+    background-color: #1D50DE;
+    border: #1D50DE;
+}
+.nav-item .btn-danger:hover{
+    background-color: #1540b6;
+    border: #1540b6;;
+}
+.nav-item .btn-danger:focus{
+    box-shadow: 0 0 0 0.2rem rgba(53, 98, 220, 0.5);
+}
+
+
+
+.nav-item i{
+    color: white !important;
+}
+
+.jumbo{
+    padding: 2%;
+}
+.jumbo h2{
+    text-align: center;
+    font-weight: 600;
+    font-size: 3em;
+    font-family: "poppins", sans-serif;
+}
+
+.swiper-pagination-bullet{
+    background-color:#F79645;
+}
+
+.eventimage img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    
+}
+.organizer_image img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.eventimgs .row{
+    margin-right: 0px;
+    margin-left: 0px;
+   
+}
+.eventimgs .col-lg-9, .col-lg-3{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
+.event_description{
+    /* margin: 2% auto; */
+    width: 100%;
+    padding: 5%;
+}
+
+.description_header h3{
+    font-family: "poppins", sans-serif;
+    font-weight: 700;
+    color: #02113a;
+}
+.description_header h4{
+    font-family: "poppins", sans-serif;
+    font-weight: 500;
+    font-size: 2.4em;
+    margin-top: -.3em;
+    color: #02113a;
+}
+.description_details span{
+    color: #1D50DE;
+    /* margin-top: 20px; */
+
+}
+
+.location a{
+    color: #007bff;
+    font-weight: 600;
+    margin: 20px 0 25px 0px;
+}
+
+.abouthead{
+    color: #02113a;
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    border-bottom: 2px solid #02113a;
+    width: 200px;
+}
+
+.aboutevent{
+    width: 80%;
+    color: #02113a;
+}
+
+.aboutevent p{
+    /* width:90%; */
+    text-justify:distribute-all-lines;
+}
+
+.about_images img {
+    width: 20%;
+    /* height: 150px; */
+    /* object-fit: cover;
+    display: inline-block;
+    padding: 2px; */
+}
+
+.about_images img:nth-child(2) {
+    max-width: 100%;
+    /* height: 150px; */
+    /* object-fit: cover;
+    display: inline-block; */
+}
+.tags{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 90%;
+}
+
+.tags ul{
+    margin-top: -2%;
+}
+.tags li{
+    color: white;
+    background-color: #1D50DE;
+    padding: 2px 2% 2px 2%;
+    margin:2px;
+    text-align: center;
+    display: inline-block;
+    font-size: .8em;
+    font-weight: 500;
+}
+
+.tags li:hover{
+    cursor: pointer;
+
+}
+.tags p{
+    color: #02113a;
+    font-weight: 500;
+}
+
+.aboutorganizers{
+    margin-top: 60px;
+}
+
+.aboutorganizers .images img{
+    width: 40%;
+    height: 150px;
+    object-fit: cover;
+    display: inline-block;
+    padding: 3px;
+}
+
+.aboutorganizers p{
+    margin-top: 5px;
+}
+
+.payment_btn{
+    text-align: center;
+    margin: 5%;
+}
+
+.more{
+    color: #02113a;
+    font-family: "poppins", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.6em;
+    /* text-decoration: underline; */
+    border-bottom: 3px solid #02113a;
+    width: 40%;
+    
+}
+
+.similarevents .more{
+    width: 14%;
+    color: #1D50DE;
+    border-bottom: 3px solid #1D50DE;
+}
+.swiper-container3{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding-top: 5%;
+    /* padding-bottom: 5%; */
+    z-index: 1;
+    margin-bottom: 10px;
+}
+
+
+.ticket-size{
+    width: 300px;
+    margin-left: 10px;
+
+}
+
+.important-notice>span{
+    font-size: .9rem;
+    font-weight: 700;
+}
+.important-notice{
+    padding: 25px;
+    background-color: #dc3545;
+    color: white;
+    margin-top: 60px;
+    width: 80%;
+}
+
+.swiper-container3 .swiper-slide{
+    margin-right: 30px !important;
+}
+
+.swiper-container3 .swiper-pagination-bullet{
+    background-color:#02113a;
+    bottom: 0px !important;
+}
+
+
+
+
+
+
+@media only screen and (max-width:1024px){
+    .bdy{
+        margin-left: 1%;
+    }
+    .swiper-container3 .swiper-slide{
+        margin-right: 340px !important;
+    }
+
+    .ticket-size{
+        width: 370px;
+        margin-left: 0px;
+    
+    }
+
+}
+
+
+@media (max-width: 575px){
+    /* .bdy{
+        margin-left: 1%;
+    } */
+    .ticket-size{
+        width: 300px !important;
+        margin-left: 0px;
+    
+    }
+
+    .section_gap{
+        padding-left: 5%;
+    }
+
+
+    .about_images img {
+        width: 40%;
+    }
+    
+    .about_images img:nth-child(2) {
+        width: 50%;
+    }
+
+    .aboutorganizers .images img{
+        width: 70%;
+        height: 150px;
+    }
+}

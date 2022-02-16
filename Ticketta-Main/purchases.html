@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Dashboard | Purchases</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="css/themify-icons/themify-icons.css">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:100,200,400,300,500,600,700' rel='stylesheet'>
+
+  <link rel="stylesheet" href="ticketta.css">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<!--================ Start Header Menu Area =================-->
+<header class="header_area">
+  <div class="main_menu">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand logo_h" href="index.html">Ticketta</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+          <ul class="nav navbar-nav menu_nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Dashboard</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html">My Events</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html">Event Records</a></li>
+            <li class="nav-item active"><a class="nav-link" href="index.html">Purchases</a></li>
+            <!-- <li class="nav-item submenu dropdown">
+                              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+                                  aria-haspopup="true" aria-expanded="false">Help</a>
+                              <ul class="dropdown-menu">
+                                  <li class="nav-item"><a class="nav-link" href="">How to</a></li>
+                                  <li class="nav-item"><a class="nav-link" href="">How to</a></li>
+                              </ul>
+                          </li> -->
+
+          </ul>
+          <ul class="nav-shop">
+            <!-- <span class="btn btn-danger"> <i class="fa fa-credit-card"></i> Make Payment</span> -->
+            <li class="nav-item"><a class="button button-header" href="#">Create Event</a></li>
+          </ul>
+
+          <ul class="user-profile">
+            <li class="user-image">
+              <span><i class="fa fa-user"></i></span>
+            </li>
+            <li class=" nav-item submenu dropdown">
+              <a class="pl-2 pt-2 nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                aria-expanded="false">Jane Doe</a>
+              <ul class="dropdown-menu">
+                <li class="nav-item"><a class="nav-link" href="">Account Settings</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Change Password</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Log Out</a></li>
+              </ul>
+
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+<!--================ End Header Menu Area =================-->
+
+<body>
+
+
+  <div class="dashboard">
+    <div class="container-fluid">
+
+      <section>
+
+        <h3>Purchased Tickets</h3>
+       <div class="filternav mt-4">
+         <div class="row">
+          <div class="col-lg-8 my-2">
+            <div class="input-group">
+              <input id="search" type="text" class="form-control" name="search" placeholder="Search Tickets Here">
+              <span class="input-group-addon"><i class="ti-search"></i></span>
+          </div>
+          </div>
+          <div class="col-lg-4 my-2">
+            <div class="form-group pb-3">
+          
+              <select  class="form-control">
+                <option value="">Filter tickets by month</option>
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+              </select>
+            </div>
+          </div>
+          
+         </div>
+       </div>
+       <!-- purchase-tickets table starts here -->
+       <div class="purchased-tickets">
+        <div class="ticket pb-4">
+          <table class="table">
+            <!-- <thead>
+              <tr>
+                
+                <th>Event</th>
+                <th>Starts</th>
+                <th>Ends</th>
+                <th>Amount</th>
+                <th>Status</th>
+                <th></th>
+              </tr>
+            </thead> -->
+            <tbody>   
+              <tr> 
+                <td>
+                  <a href="#">
+                      <div class="event">
+                      <img src="/Image.png" alt="">
+                      <h4>
+                        A FEMINIST'S GUIDE
+                        TO BOTANY: Online Botanical
+                        Painting Session
+                      </h4>
+                    </div>
+                  </a>
+                </td>
+                <td>
+                  <p class="tablehead">Starts</p>
+                  <p class="start-date">Thursday, Nov 26</p>
+                  <p class="start-time">7:30pm WAT</p>
+                </td>
+                <td>
+                  <p class="tablehead">Stops</p>
+                  <p class="stop-date">Thursday, Nov 26</p>
+                  <p class="stop-time">7:30pm WAT</p>
+                </td>
+                <td>
+                  <p class="tablehead">Amount</p>
+                  <p class="ticket-amount">5 Tickets</p>
+                </td>
+                <td>
+                  <p class="tablehead">Status</p>
+                  <p class="status">
+                  Ongoing
+                </p></td>
+                <td class="options"> <a href="purchase info.html"><i class="fa fa-info"></i></a></td>
+              </tr>
+              <tr> 
+                <td>
+                  <a href="#">
+                      <div class="event">
+                      <img src="/Image.png" alt="">
+                      <h4>
+                        A FEMINIST'S GUIDE
+                        TO BOTANY: Online Botanical
+                        Painting Session
+                      </h4>
+                    </div>
+                  </a>
+                </td>
+                <td>
+                  <p class="tablehead">Starts</p>
+                  <p class="start-date">Thursday, Nov 26</p>
+                  <p class="start-time">7:30pm WAT</p>
+                </td>
+                <td>
+                  <p class="tablehead">Stops</p>
+                  <p class="stop-date">Thursday, Nov 26</p>
+                  <p class="stop-time">7:30pm WAT</p>
+                </td>
+                <td>
+                  <p class="tablehead">Amount</p>
+                  <p class="ticket-amount">5 Tickets</p>
+                </td>
+                <td>
+                  <p class="tablehead">Status</p>
+                  <p class="status">
+                  Ongoing
+                </p></td>
+                <td class="options"> <a href="purchase info.html"><i class="fa fa-info"></i></a></td>
+              </tr>
+              <tr> 
+                <td>
+                  <a href="#">
+                      <div class="event">
+                      <img src="/Image.png" alt="">
+                      <h4>
+                        A FEMINIST'S GUIDE
+                        TO BOTANY: Online Botanical
+                        Painting Session
+                      </h4>
+                    </div>
+                  </a>
+                </td>
+                <td>
+                  <p class="tablehead">Starts</p>
+                  <p class="start-date">Thursday, Nov 26</p>
+                  <p class="start-time">7:30pm WAT</p>
+                </td>
+                <td>
+                  <p class="tablehead">Stops</p>
+                  <p class="stop-date">Thursday, Nov 26</p>
+                  <p class="stop-time">7:30pm WAT</p>
+                </td>
+                <td>
+                  <p class="tablehead">Amount</p>
+                  <p class="ticket-amount">5 Tickets</p>
+                </td>
+                <td>
+                  <p class="tablehead">Status</p>
+                  <p class="status">
+                  Ongoing
+                </p></td>
+                <td class="options"> <a href="purchase info.html"><i class="fa fa-info"></i></a></td>
+              </tr>
+              <tr> 
+                <td>
+                  <a href="#">
+                      <div class="event">
+                      <img src="/Image.png" alt="">
+                      <h4>
+                        A FEMINIST'S GUIDE
+                        TO BOTANY: Online Botanical
+                        Painting Session
+                      </h4>
+                    </div>
+                  </a>
+                </td>
+                <td>
+                  <p class="tablehead">Starts</p>
+                  <p class="start-date">Thursday, Nov 26</p>
+                  <p class="start-time">7:30pm WAT</p>
+                </td>
+                <td>
+                  <p class="tablehead">Stops</p>
+                  <p class="stop-date">Thursday, Nov 26</p>
+                  <p class="stop-time">7:30pm WAT</p>
+                </td>
+                <td>
+                  <p class="tablehead">Amount</p>
+                  <p class="ticket-amount">5 Tickets</p>
+                </td>
+                <td>
+                  <p class="tablehead">Status</p>
+                  <p class="status">
+                  Ongoing
+                </p></td>
+                <td class="options"> <a href="purchase info.html"><i class="fa fa-info"></i></a></td>
+              </tr>
+              <tr> 
+                <td>
+                  <a href="#">
+                      <div class="event">
+                      <img src="/Image.png" alt="">
+                      <h4>
+                        A FEMINIST'S GUIDE
+                        TO BOTANY: Online Botanical
+                        Painting Session
+                      </h4>
+                    </div>
+                  </a>
+                </td>
+                <td>
+                  <p class="tablehead">Starts</p>
+                  <p class="start-date">Thursday, Nov 26</p>
+                  <p class="start-time">7:30pm WAT</p>
+                </td>
+                <td>
+                  <p class="tablehead">Stops</p>
+                  <p class="stop-date">Thursday, Nov 26</p>
+                  <p class="stop-time">7:30pm WAT</p>
+                </td>
+                <td>
+                  <p class="tablehead">Amount</p>
+                  <p class="ticket-amount">5 Tickets</p>
+                </td>
+                <td>
+                  <p class="tablehead">Status</p>
+                  <p class="status">
+                  Ongoing
+                </p></td>
+                <td class="options"> <a href="purchase info.html"><i class="fa fa-info"></i></a></td>
+              </tr>
+             
+            
+             
+             
+            </tbody>
+          </table>
+        </div>
+
+        <div class="see_more mt-4">
+        <h5> <a href=""> See More <i class="fa fa-arrow-down"></i></a></h5>
+        </div>
+
+
+      </div>
+
+      </section>
+    </div>
+  </div>
+
+
+  <!--================ Start footer Area  =================-->	
+ <footer class="footer pt-5 mt-5">
+  <div class="footer-area">
+    <div class="container">
+      <div class="row section_gap">
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="single-footer-widget tp_widgets">
+            <h4 class="footer_title large_title">FAQs</h4>
+           <ul>
+             <li><a href="#">How does Ticketta Work?</a></li>
+             <li><a href="#">How do I Create Events</a></li>
+             <li><a href="#">How does Ticketta Work?</a></li>
+             <li><a href="#">How do I Create Events</a></li>
+             <li><a href="#">How does Ticketta Work?</a></li>
+             <li><a href="#">How do I Create Events</a></li>
+           </ul>
+          </div>
+        </div>
+        <div class="offset-lg-1 col-lg-2 col-md-6 col-sm-6">
+          <div class="single-footer-widget tp_widgets">
+            <h4 class="footer_title">Quick Links</h4>
+            <ul class="list">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Overview</a></li>
+              <li><a href="#">Tickets</a></li>
+              <li><a href="#">Sign up</a></li>
+              <li><a href="#">Log In</a></li>
+              <li><a href="#">Help</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6">
+          <div class="single-footer-widget tp_widgets">
+            <h4 class="footer_title">Connect With Us</h4>
+            <span><a href="#"><i class="ti-facebook"></i></a></span>
+            <span><a href="#"><i class="ti-twitter"></i></a></span>
+            <span><a href="#"><i class="ti-instagram"></i></a></span>
+            <span><a href="#"><i class="ti-linkedin"></i></a></span>
+          </div>
+        </div>
+        
+        <div class="offset-lg-1 col-lg-3 col-md-6 col-sm-6">
+          <div class="single-footer-widget tp_widgets">
+            <h4 class="footer_title">Contact Us</h4>
+            <div class="ml-40">
+              <p class="sm-head">
+                <span class="fa fa-location-arrow"></span>
+                Head Office
+              </p>
+              <p>123, Main Street, Your City</p>
+
+              <p class="sm-head">
+                <span class="fa fa-phone"></span>
+                Phone Number
+              </p>
+              <p>
+                +123 456 7890 <br>
+                +123 456 7890
+              </p>
+
+              <p class="sm-head">
+                <span class="fa fa-envelope"></span>
+                Email
+              </p>
+              <p>
+                free@infoexample.com <br>
+                www.infoexample.com
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row d-flex">
+        <p class="col-lg-12 footer-text text-center">
+          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy; Ticketta <script>document.write(new Date().getFullYear());</script> All rights reserved </p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--================ End footer Area  =================-->
+
+
+
+
+
+
+
+
+
+<script src="js/jquery/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+<script src="tickett.js"></script>
+<script src="dashboard.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+
+</html>
